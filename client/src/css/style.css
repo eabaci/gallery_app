@@ -1,0 +1,51 @@
+#app {
+	background: red;
+}
+
+#wallet-view {
+	background: green;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+#wallet-view li {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+#wallet-view p {
+	display: inline;
+}
+
+#wallet-view button {
+	margin: 5px;
+}
+
+.offer-view {
+	background: gray;
+	padding: 20px;
+}
+
+.offer-view h3 {
+	margin: 10px 0;
+}
+
+.offer-view img {
+	width: 100px;
+	height: 100px;
+}
+
+.offer-details-view img {
+	width: 300px;
+	height: 200px;
+}
+
+.offer-add-view {
+	display: flex;
+	flex-direction: column;
+}
+
+.offer-add-view input {
+	margin: 0 0 10px;
+}

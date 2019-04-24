@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Backbone.js Tests</title>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,vhrome=1" />
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+
+    <!-- JavaScript Test Libraries -->
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+
+    <script>
+      // Setup
+      var expect = chai.expect;
+      mocha.setup('bdd');
+
+      // Run tests on window load event
+      window.onload = function() {
+        (window.mochaPhantomJS || mocha).run();
+      };
+    </script>
+
+    <!-- Inlude our specs -->
+    <script src="../dist/bundle.test.js"></script>
+  </head>
+
+  <body>
+    <div id="mocha"></div>
+    <div id="fixtures"></div>
+  </body>
+</html>
